@@ -90,6 +90,7 @@ searchInput.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
         const query = searchInput.value.toLowerCase().trim();
         const flashcards = document.querySelectorAll('.flashcard');
+        const flashcards = document.querySelectorAll('.flashcard');
         
         flashcards.forEach(flashcard => {
             const searchContent = flashcard.getAttribute('data-search');
@@ -103,7 +104,7 @@ searchInput.addEventListener('keypress', (event) => {
 });
 
 // Clear Search - Clear input and reload all flashcards
-// Clear Search - Clear input and show all flashcards
+
 clearSearchButton.addEventListener('click', () => {
     searchInput.value = ''; // Clear the search input
     const flashcards = document.querySelectorAll('.flashcard');
